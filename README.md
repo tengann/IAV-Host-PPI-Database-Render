@@ -1,2 +1,2 @@
 # IAV-Host-PPI-Database-Render
-https://iav-ppi.onrender.com/home
+Access the database GUI here: https://iav-ppi.onrender.com/home
