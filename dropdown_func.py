@@ -15,7 +15,7 @@ def dropdown_func():
     return html.Div([
 
         html.Div([
-            html.Label("Select Subtype: ", style=styles['home-label']),
+            html.Label("Select IAV Subtype: ", style=styles['home-label']),
             # html.Label("Select Subtype: "),
             dcc.Dropdown(id='subtype-choice', 
                         options=[{'label':s, 'value':s} for s in sorted (df.Subtype.unique())],
@@ -26,7 +26,7 @@ def dropdown_func():
         ]),
 
         html.Div([
-            html.Label("Select Pathogen: ", style=styles['home-label']),
+            html.Label("Select IAV Strain: ", style=styles['home-label']),
             dcc.Dropdown(id='pathogen-choice', 
                         options={}, #options populated from Callback
                         clearable=False,
@@ -34,7 +34,7 @@ def dropdown_func():
                         style=styles['home-dropdown']
             ), 
         ], style = {'margin-top':'10px'})
-    ], style={'width':'50%'})
+    ], style={'width':'50%', 'margin': '10px auto'})
 
 # Populate options of Pathogen dropdown based on Subtypes dropdown
 @app.callback(
