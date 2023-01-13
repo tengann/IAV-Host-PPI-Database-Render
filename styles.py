@@ -426,14 +426,13 @@ styles = {
 
     ## For descriptions
     'hp-LR-content-top-div':{
-
         'width':'95%',
         'height':'18%', ## 18%
         'margin-top':'10px',
         'border': '2px #97B3D0 dashed', ## blue
         'font-size' : '20px',
         'font-weight' : 'bold',
-        'position' : 'relative',
+        'white-space' : 'pre-line',
     },
 
     ## For Links 

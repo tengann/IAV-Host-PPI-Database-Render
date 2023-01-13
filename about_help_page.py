@@ -78,7 +78,15 @@ def create_help_page():
                     'Influenza A virus (IAV) and mouse host proteins, that will allow the systematic study of disease factors ' + 
                     'by taking the virulence information (i.e., median lethal dose (LD50)) into account. ' +
                     'From a previously published dataset involving lethal dose studies of IAV infections in mice, an interacting domain network of viral and mouse protein domains ' + 
-                    'as nodes with weighted edges was constructed. ' +  'The edges were scored with Domain Interaction Statistical Potential (DISPOT) to indicate putative DDI.'
+                    'as nodes with weighted edges was constructed. ' + 
+                    'The edges were scored with Domain Interaction Statistical Potential (DISPOT) to indicate putative DDI.' + 
+                    '\n\n' + 
+                    'The network will aid IAV disease modeling by providing strain-specific virulence levels with interacting protein domains. ' +
+                    'It can possibly contribute to computational methods for uncovering IAV infection mechanisms mediated through protein domain interactions between ' +
+                    'viral and host proteins.'
+                    '\n\n' +
+                    'SUPERFAMILY 2.0 sequence search was used to map regions of an amino acid sequence to at least one Structural Classification of Proteins (SCOP) domain(s) ' +
+                    'using the SUPERFAMILY hidden Markov models.'
                     ),
                 ], style=styles['hp-LR-content-top-div']),
 
@@ -96,17 +104,25 @@ def create_help_page():
                 
                     html.Div([
                         dcc.Link(
-                            children = 'DISPOT',
-                            href='http://dispot.korkinlab.org/home/pairs', 
-                            target='http://dispot.korkinlab.org/home/pairs'
-                        , style={'font-size' : '14px'}),
-                    ], style={'margin-top':'5px'}),
-                    
-                    html.Div([
-                        dcc.Link(
                             children = 'UniProt Knowledgebase(KB)/Proteomes database',
                             href='https://www.uniprot.org/', 
                             target='https://www.uniprot.org/'
+                        , style={'font-size' : '14px'}),
+                    ], style={'margin-top':'5px'}),
+
+                    html.Div([
+                        dcc.Link(
+                            children = 'SUPERFAMILY 2.0 database',
+                            href='https://supfam.org/sequence/search', 
+                            target='https://supfam.org/sequence/search'
+                        , style={'font-size' : '14px'}),
+                    ], style={'margin-top':'5px'}),
+
+                    html.Div([
+                        dcc.Link(
+                            children = 'DISPOT',
+                            href='http://dispot.korkinlab.org/home/pairs', 
+                            target='http://dispot.korkinlab.org/home/pairs'
                         , style={'font-size' : '14px'}),
                     ], style={'margin-top':'5px'}),
                     
@@ -118,6 +134,13 @@ def create_help_page():
                         , style={'font-size' : '14px'}),
                     ], style={'margin-top':'5px'}),
 
+                    html.Div([
+                        dcc.Link(
+                            children = 'IAV-Host PPI web server manuscript (Preprint)',
+                            href='https://www.biorxiv.org/content/10.1101/2022.10.11.511722v1', 
+                            target='https://www.biorxiv.org/content/10.1101/2022.10.11.511722v1'
+                        , style={'font-size' : '14px'}),
+                    ], style={'margin-top':'5px'}),
                 ], style=styles['hp-L-content-btm-div']),
             ], style=styles['hp-L-main-div']),
 
