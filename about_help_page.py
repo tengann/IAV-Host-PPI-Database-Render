@@ -83,7 +83,8 @@ def create_help_page():
                     'using the SUPERFAMILY hidden Markov models. ' + 
                     'Then, Domain Interaction Statistical Potential (DISPOT) was applied to determine and score putative DDIs.' + 
                     '\n\n' + 
-                    'Ultimately, IAV-Mouse PPI web server aids IAV disease modeling and can possibly contribute to computational methods for uncovering IAV infection mechanisms ' + 
+                    'Ultimately, IAV-Mouse PPI web server allows the systematic study of disease factors, aids IAV disease modeling and ' + 
+                    'can possibly contribute to computational methods for uncovering IAV infection mechanisms ' + 
                     'mediated through protein domain interactions between viral and host proteins.'
                     ),
                 ], style=styles['hp-LR-content-top-div']),
