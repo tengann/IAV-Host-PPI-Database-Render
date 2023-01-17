@@ -44,7 +44,7 @@ def create_home_page():
                     dbc.NavbarBrand( ## Call out attention to a brand name or site title within a navbar
                         dcc.Link(
                             dbc.Button(
-                                children='Help', 
+                                children='HELP', 
                                 style=styles['nav-bar-btn']
                             ),
                             href='/help'
@@ -70,7 +70,7 @@ def create_home_page():
             html.Div([
                 dcc.Link(
                     dbc.Button(
-                        children='Search', 
+                        children='SEARCH', 
                         style=styles['nav-bar-btn'] ## default size
                     ),
                     href='/search',
@@ -80,7 +80,7 @@ def create_home_page():
 
             ## Content Summary
             html.Div([
-                html.P('57 journal publications\n 14 IAV subtypes, 109 IAV strains, 2419 mouse proteins\n 1936 domain-domain interactions', style=styles['home-txt']), ## 'para-txt'
+                html.P('57 journal publications\n 14 IAV subtypes, 109 IAV strains, 2419 mouse proteins\n 1936 domain-domain interactions', style=styles['home-txt']), 
             ], style={'margin-top':'20px', 'text-align': 'center'})
 
 
