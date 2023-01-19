@@ -43,7 +43,7 @@ def create_main_content():
                     dbc.NavbarBrand( ## Call out attention to a brand name or site title within a navbar
                         dcc.Link(
                             dbc.Button(
-                                children='HOME', 
+                                children='Home', 
                                 style=styles['nav-bar-btn']
                             ),
                             href='/home'
@@ -56,7 +56,7 @@ def create_main_content():
                     dbc.NavbarBrand( 
                         dcc.Link(
                             dbc.Button(
-                                children='HELP', 
+                                children='Help', 
                                 style=styles['nav-bar-btn']
                             ),
                             href='/help'

@@ -44,7 +44,7 @@ def create_home_page():
                     dbc.NavbarBrand( ## Call out attention to a brand name or site title within a navbar
                         dcc.Link(
                             dbc.Button(
-                                children='HELP', 
+                                children='Help', 
                                 style=styles['nav-bar-btn']
                             ),
                             href='/help'
@@ -70,7 +70,7 @@ def create_home_page():
             html.Div([
                 dcc.Link(
                     dbc.Button(
-                        children='SEARCH', 
+                        children='Search', 
                         style=styles['nav-bar-btn'] ## default size
                     ),
                     href='/search',

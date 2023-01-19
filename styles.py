@@ -133,7 +133,7 @@ styles = {
     ## Left: Placeholder
     'nav-bar-L-sub-div':{ 
         'width' : '35%', ## 
-        # 'border':'2px solid white',
+        # 'border':'2px solid pink'
     },
 
     ## Right: Button(s)

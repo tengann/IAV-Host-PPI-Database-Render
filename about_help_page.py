@@ -36,7 +36,7 @@ def create_help_page():
                     dbc.NavbarBrand( ## Call out attention to a brand name or site title within a navbar
                         dcc.Link(
                             dbc.Button(
-                                children='SEARCH', 
+                                children='Search', 
                                 style=styles['nav-bar-btn']
                             ),
                             href='/search'
@@ -48,7 +48,7 @@ def create_help_page():
                     dbc.NavbarBrand( ## Call out attention to a brand name or site title within a navbar
                         dcc.Link(
                             dbc.Button(
-                                children='HOME', 
+                                children='Home', 
                                 style=styles['nav-bar-btn']
                             ),
                             href='/home'
